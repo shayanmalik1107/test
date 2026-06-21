@@ -104,7 +104,7 @@ export default function Home() {
             <div className={styles.imageContainer}>
               <Image
                 className={styles.image}
-                src="/hero.png"
+                src="/devcms-upload-1782058223213-Gemini_Generated_Image_xpc1unxpc1unxpc1.png"
                 alt="Vortex Digital Agency Design Showcase"
                 fill
                 sizes="(max-width: 1200px) 100vw, 900px"
@@ -219,7 +219,7 @@ export default function Home() {
               <div className={styles.projectImageContainer}>
                 <Image
                   className={styles.projectImage}
-                  src="/hero.png"
+                  src="/devcms-upload-1782058223213-Gemini_Generated_Image_xpc1unxpc1unxpc1.png"
                   alt="NovaCommerce Headless E-commerce Application"
                   fill
                   sizes="(max-width: 768px) 100vw, 600px"
@@ -245,7 +245,7 @@ export default function Home() {
               <div className={styles.projectImageContainer}>
                 <Image
                   className={styles.projectImage}
-                  src="/hero.png"
+                  src="/devcms-upload-1782058223213-Gemini_Generated_Image_xpc1unxpc1unxpc1.png"
                   alt="Pulse Health Patient Portal Mobile Application"
                   fill
                   sizes="(max-width: 768px) 100vw, 600px"
