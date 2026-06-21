@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import styles from "./services.module.css";
+import styles from "./Services.module.css";
 
 export default function Services() {
   // Service Cards Expansions State
@@ -30,7 +30,7 @@ export default function Services() {
     }
   };
 
-  const servicesData = [
+  const ServicesData = [
     {
       id: "web",
       title: "Full-Stack Web Architectures",
@@ -182,8 +182,8 @@ export default function Services() {
 
       {/* Interactive Services Catalog */}
       <section className="page-section" style={{ paddingTop: "0" }}>
-        <div className={styles.servicesGrid}>
-          {servicesData.map((service) => {
+        <div className={styles.ServicesGrid}>
+          {ServicesData.map((service) => {
             const isExpanded = expandedService === service.id;
             return (
               <div
