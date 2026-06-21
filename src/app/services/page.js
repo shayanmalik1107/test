@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import styles from "./services.module.css";
+import styles from "./Services.module.css";
 
 export default function Services() {
   // Service Cards Expansions State
