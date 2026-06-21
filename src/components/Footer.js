@@ -63,7 +63,7 @@ export default function Footer() {
           <div className={styles.linksColumn}>
             <h4 className={styles.columnTitle}>Services</h4>
             <ul className={styles.linksList}>
-              <li><Link href="/services" className={styles.link}>Web App Development</Link></li>
+              <li><Link href="/about" className={styles.link}>Web App Development</Link></li>
               <li><Link href="/services" className={styles.link}>Mobile Applications</Link></li>
               <li><Link href="/services" className={styles.link}>UI/UX Design Systems</Link></li>
               <li><Link href="/services" className={styles.link}>AI & Machine Learning</Link></li>
