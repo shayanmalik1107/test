@@ -82,11 +82,11 @@ export default function Home() {
             We design, build, and deploy premium web applications, native mobile experiences, and advanced AI integrations. Engineered for speed, designed to inspire.
           </p>
           <div className={styles.ctaGroup}>
-            <Link href="/portfolio" className="btn btn-primary">
+            <Link href="/about" className="btn btn-primary">
               Explore Our Work
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </Link>
-            <Link href="/contact" className="btn btn-secondary">
+            <Link href="/about" className="btn btn-secondary">
               Let's Connect
             </Link>
           </div>
@@ -162,7 +162,7 @@ export default function Home() {
             <p className={styles.serviceCardDesc}>
               Leveraging Next.js, React, Node.js, and serverless databases to create fast, SEO-optimized, and dynamic enterprise portals.
             </p>
-            <Link href="/services" className={styles.serviceLink}>
+            <Link href="/about" className={styles.serviceLink}>
               Learn more
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </Link>
@@ -177,7 +177,7 @@ export default function Home() {
             <p className={styles.serviceCardDesc}>
               Delivering high-performance, native-feel mobile applications for iOS and Android built on React Native and Flutter design systems.
             </p>
-            <Link href="/services" className={styles.serviceLink}>
+            <Link href="/about" className={styles.serviceLink}>
               Learn more
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </Link>
@@ -192,7 +192,7 @@ export default function Home() {
             <p className={styles.serviceCardDesc}>
               Integrating customized agents, conversational pipelines, semantic search, and automation to supercharge product capabilities.
             </p>
-            <Link href="/services" className={styles.serviceLink}>
+            <Link href="/about" className={styles.serviceLink}>
               Learn more
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </Link>
@@ -201,14 +201,14 @@ export default function Home() {
       </section>
 
       {/* Featured Works Section */}
-      <section className={styles.portfolioSection}>
+      <section className={styles.PortfolioSection}>
         <div className="page-section">
-          <div className={styles.portfolioHeader}>
+          <div className={styles.PortfolioHeader}>
             <div>
               <span className="badge-neon" style={{ marginBottom: "1rem" }}>Our Case Studies</span>
               <h2 className="section-title">Crafting digital products on purpose</h2>
             </div>
-            <Link href="/portfolio" className="btn btn-secondary">
+            <Link href="/about" className="btn btn-secondary">
               View All Projects
             </Link>
           </div>
@@ -377,7 +377,7 @@ export default function Home() {
           <p className={styles.bannerDesc}>
             Let's translate your product design or legacy application into a robust, high-performance solution.
           </p>
-          <Link href="/contact" className="btn btn-cyan btn-lg" style={{ fontSize: "1.1rem", padding: "1rem 2rem", borderRadius: "var(--radius-sm)" }}>
+          <Link href="/about" className="btn btn-cyan btn-lg" style={{ fontSize: "1.1rem", padding: "1rem 2rem", borderRadius: "var(--radius-sm)" }}>
             Initiate Project
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </Link>
