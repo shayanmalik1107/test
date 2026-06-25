@@ -36,29 +36,6 @@ export default function Header() {
     { name: "Contact", href: "/contact" },
   ];
 
-  // Helper to normalize path for comparison
-  const normalizePath = (p) => {
-    if (!p) return "/";
-    if (p.startsWith("http") || p.startsWith("#")) return p;
-    let normalized = p.startsWith("/") ? p : `/${p}`;
-    return normalized === "/" ? "/" : normalized.replace(/\/$/, "");
-  };
-
-  const activePath = normalizePath(pathname);
-  
-  // Find all links that match the current path
-  const matchingLinks = navLinks.filter(link => normalizePath(link.href) === activePath);
-  
-  let activeLinkName = null;
-  if (matchingLinks.length === 1) {
-    activeLinkName = matchingLinks[0].name;
-  } else if (matchingLinks.length > 1) {
-    // If multiple links point to the same URL, prefer the one whose name matches the path
-    const pathKey = activePath.split("/").pop().toLowerCase();
-    const exactMatch = matchingLinks.find(link => link.name.toLowerCase() === pathKey);
-    activeLinkName = exactMatch ? exactMatch.name : matchingLinks[0].name;
-  }
-
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.container}>
@@ -72,7 +49,7 @@ export default function Header() {
         <nav className={styles.desktopNav}>
           <ul className={styles.navList}>
             {navLinks.map((link) => {
-              const isActive = activeLinkName === link.name;
+              const isActive = pathname === link.href;
               return (
                 <li key={link.name}>
                   <Link
@@ -113,7 +90,7 @@ export default function Header() {
           <nav className={styles.mobileNav}>
             <ul className={styles.mobileNavList}>
               {navLinks.map((link) => {
-                const isActive = activeLinkName === link.name;
+                const isActive = pathname === link.href;
                 return (
                   <li key={link.name}>
                     <Link
