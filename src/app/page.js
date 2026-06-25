@@ -38,7 +38,7 @@ export default function Home() {
       quote: "Vortex Digital didn't just build our app; they partnered in our product strategy. Their Next.js implementation cut our load times in half and increased customer signups by 42%.",
       author: "Sarah Jenkins",
       role: "CTO, NovaCommerce",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face"
+      avatar: "/devcms-upload-1782381627402-ChatGPT-Image-May-21--2026--06_34_55-AM.png"
     },
     {
       quote: "The AI agent integration built by Vortex has automated 60% of our operations. The team's command of large language models and latency optimization was spectacular.",
