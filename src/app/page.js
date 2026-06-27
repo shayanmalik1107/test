@@ -82,111 +82,9 @@ export default function Home() {
             We design, build, and deploy premium web applications, native mobile experiences, and advanced AI integrations. Engineered for speed, designed to inspire.
           </p>
           <div className={styles.ctaGroup}>
-            <Link href="/contact" className="btn btn-primary">
+            <Link href="/contact" className="btn btn-primary" style={{ backgroundColor: "#ffffff" }}>
               Explore Our Work
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </Link>
-            <Link href="/contact" className="btn btn-secondary">
-              Let's Connect
-            </Link>
-          </div>
-        </div>
-
-        {/* Hero Media Element */}
-        <div className={styles.imageWrapper}>
-          <div className={styles.imageInner}>
-            <div className={styles.windowHeader}>
-              <span className={styles.dotRed}></span>
-              <span className={styles.dotYellow}></span>
-              <span className={styles.dotGreen}></span>
-              <span className={styles.windowTitle}>vortex-showcase.json</span>
-            </div>
-            <div className={styles.imageContainer}>
-              <Image
-                className={styles.image}
-                src="/devcms-upload-1782123134171-ChatGPT-Image-Jun-8--2026--11_43_24-PM-1.png"
-                alt="Vortex Digital Agency Design Showcase"
-                fill
-                sizes="(max-width: 1200px) 100vw, 900px"
-                priority
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Counter Section */}
-      <section className={styles.statsSection}>
-        <div className="glass-panel" style={{ width: "100%", padding: "2.5rem 2rem" }}>
-          <div className={styles.statsGrid}>
-            <div className={styles.statCard}>
-              <h3 className={`${styles.statNum} text-gradient-primary`}>120+</h3>
-              <p className={styles.statLabel}>Products Launched</p>
-            </div>
-            <div className={styles.statDivider}></div>
-            <div className={styles.statCard}>
-              <h3 className={`${styles.statNum} text-gradient-cyan`}>$45M+</h3>
-              <p className={styles.statLabel}>Client Funding Raised</p>
-            </div>
-            <div className={styles.statDivider}></div>
-            <div className={styles.statCard}>
-              <h3 className={`${styles.statNum} text-gradient-accent`}>99.4%</h3>
-              <p className={styles.statLabel}>On-Time Delivery</p>
-            </div>
-            <div className={styles.statDivider}></div>
-            <div className={styles.statCard}>
-              <h3 className={`${styles.statNum} text-gradient-primary`}>15+</h3>
-              <p className={styles.statLabel}>Core Engineers</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Services Grid */}
-      <section className="page-section">
-        <div style={{ textAlign: "center", marginBottom: "3rem" }}>
-          <span className="badge-neon" style={{ marginBottom: "1rem" }}>Services Catalog</span>
-          <h2 className="section-title">High-Fidelity Engineering Capabilities</h2>
-          <p className="section-desc" style={{ margin: "0 auto" }}>
-            We align modern architecture with beautiful visual interactions to build production-grade systems that perform.
-          </p>
-        </div>
-
-        <div className="grid-container grid-3">
-          {/* Card 1 */}
-          <div className="glass-panel-interactive" style={{ padding: "2.5rem 2rem", display: "flex", flexDirection: "column", gap: "1.25rem" }}>
-            <div className={styles.serviceIconWrapper} style={{ background: "rgba(139, 92, 246, 0.1)", border: "1px solid rgba(139, 92, 246, 0.25)" }}>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg>
-            </div>
-            <h3 className={styles.serviceCardTitle}>Full-Stack Web Architectures</h3>
-            <p className={styles.serviceCardDesc}>
-              Leveraging Next.js, React, Node.js, and serverless databases to create fast, SEO-optimized, and dynamic enterprise portals.
-            </p>
-            <Link href="/contact" className={styles.serviceLink}>
-              Learn more
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </Link>
-          </div>
-
-          {/* Card 2 */}
-          <div className="glass-panel-interactive" style={{ padding: "2.5rem 2rem", display: "flex", flexDirection: "column", gap: "1.25rem" }}>
-            <div className={styles.serviceIconWrapper} style={{ background: "rgba(6, 182, 212, 0.1)", border: "1px solid rgba(6, 182, 212, 0.25)" }}>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-            </div>
-            <h3 className={styles.serviceCardTitle}>Cross-Platform Mobile Apps</h3>
-            <p className={styles.serviceCardDesc}>
-              Delivering high-performance, native-feel mobile applications for iOS and Android built on React Native and Flutter design systems.
-            </p>
-            <Link href="/contact" className={styles.serviceLink}>
-              Learn more
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </Link>
-          </div>
-
-          {/* Card 3 */}
-          <div className="glass-panel-interactive" style={{ padding: "2.5rem 2rem", display: "flex", flexDirection: "column", gap: "1.25rem" }}>
-            <div className={styles.serviceIconWrapper} style={{ background: "rgba(236, 72, 153, 0.1)", border: "1px solid rgba(236, 72, 153, 0.25)" }}>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f472b6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
             </div>
             <h3 className={styles.serviceCardTitle}>Agentic AI & LLM Integrations</h3>
             <p className={styles.serviceCardDesc}>
@@ -208,7 +106,7 @@ export default function Home() {
               <span className="badge-neon" style={{ marginBottom: "1rem" }}>Our Case Studies</span>
               <h2 className="section-title">Crafting digital products on purpose</h2>
             </div>
-            <Link href="/contact" className="btn btn-secondary">
+            <Link href="/contact" className="btn btn-secondary" style={{ backgroundColor: "#000000" }}>
               View All Projects
             </Link>
           </div>
@@ -377,7 +275,7 @@ export default function Home() {
           <p className={styles.bannerDesc}>
             Let's translate your product design or legacy application into a robust, high-performance solution.
           </p>
-          <Link href="/contact" className="btn btn-cyan btn-lg" style={{ fontSize: "1.1rem", padding: "1rem 2rem", borderRadius: "var(--radius-sm)" }}>
+          <Link href="/contact" className="btn btn-cyan btn-lg" style={{ backgroundColor: "#000000", fontSize: "1.1rem", padding: "1rem 2rem", borderRadius: "var(--radius-sm)" }}>
             Initiate Project
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </Link>
