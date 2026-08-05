@@ -84,7 +84,7 @@ export default function Portfolio() {
       tag: "Mental Health / Mobile App",
       desc: "A audio meditation application featuring offline media caching, custom audio mixers, and user streak logs.",
       image: "/hero.png",
-      tech: ["React Native", "Expo Core", "AV Audio Engine", "Realm DB", "Lottie CSS"],
+      tech: ["React Nativ", "Expo Core", "AV Audio Engine", "Realm DB", "Lottie CSS"],
       challenge: "The client wanted a lightweight audio player offering smooth sound mixing (e.g. ambient rain overlaying music) that works without internet access.",
       solution: "We coded a React Native audio engine mapping AV nodes locally on iOS and Android. Audio assets are pre-cached in local memory with a Streak streak tracker in Realm DB.",
       results: ["1M+ tracks downloaded offline", "50% increase in daily user retention", "Featured on App Store frontpage"]
